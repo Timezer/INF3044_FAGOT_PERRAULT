@@ -11,10 +11,97 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.esiea.fagot_perrault.inf3044_fagot_perrault.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main" >
 
     <TextView
+        android:id="@+id/textMain_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Bienvenue sur l'application de FAGOT Arthur et PERRAULT William !"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textMain_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On est le"
+        android:textSize="20dp"
+        android:layout_below="@id/textMain_1"
+        android:paddingTop="10dp"
+        android:textColor="#0095DA" />
+
+    <TextView
+        android:id="@+id/textMain_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_below="@id/textMain_1"
+        android:layout_toRightOf="@id/textMain_2"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/textMain_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Il est"
+        android:textSize="20dp"
+        android:layout_below="@id/textMain_2"
+        android:paddingTop="10dp"
+        android:textColor="#0095DA"/>
+
+    <TextView
+        android:id="@+id/textMain_Heure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_below="@id/textMain_2"
+        android:layout_toRightOf="@id/textMain_3"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/textMain_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passé de"
+        android:textSize="20dp"
+        android:layout_below="@id/textMain_3"
+        android:paddingTop="10dp"
+        android:textColor="#0095DA"/>
+
+    <TextView
+        android:id="@+id/textMain_Second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_below="@id/textMain_3"
+        android:layout_toRightOf="@id/textMain_4"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="#FF0000" />
+
+    <ImageView
+        android:id="@+id/imageMain"
+        app:srcCompat="@drawable/ic_menu_top_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textMain_3"/>
+
+    <Button
+        android:id="@+id/boutonMain_Refresh"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textMain_1"
+        android:text="Raffraichir"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="refresh"/>
+
 </RelativeLayout>
