@@ -89,10 +89,11 @@
 
     <ImageView
         android:id="@+id/imageMain"
-        app:srcCompat="@drawable/ic_menu_top_3"
+        app:srcCompat="@drawable/meme_study"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/textMain_3"/>
+        android:layout_height="270dp"
+        android:layout_below="@id/textMain_3"
+        android:paddingTop="50dp"/>
 
     <Button
         android:id="@+id/boutonMain_Refresh"
@@ -103,5 +104,24 @@
         android:layout_marginTop="11dp"
         android:layout_marginLeft="200dp"
         android:onClick="refresh"/>
+
+    <Button
+        android:id="@+id/boutonMain_color_1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageMain"
+        android:text="Fond blanc"
+        android:layout_marginTop="11dp"
+        android:onClick="bg_default"/>
+
+    <Button
+        android:id="@+id/boutonMain_color_2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageMain"
+        android:text="Fond couleur"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="bg_change"/>
 
 </RelativeLayout>

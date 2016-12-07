@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.text.style.BackgroundColorSpan;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -122,23 +123,6 @@ public class MainActivity extends AppCompatActivity
             RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.content_main);
             mlayout.setBackgroundColor(Color.BLUE);
         }
-        if (id == R.id.action_settings_3) {
-            RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.content_main);
-            mlayout.setBackgroundColor(Color.GRAY);
-        }
-        if (id == R.id.action_settings_4) {
-            RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.content_main);
-            mlayout.setBackgroundColor(Color.GREEN);
-        }
-        if (id == R.id.action_settings_5) {
-            RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.content_main);
-            mlayout.setBackgroundColor(Color.MAGENTA);
-        }
-        if (id == R.id.action_settings_6) {
-            RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.content_main);
-            mlayout.setBackgroundColor(Color.YELLOW);
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -152,16 +136,23 @@ public class MainActivity extends AppCompatActivity
             Intent appel = new Intent(MainActivity.this, Main2Activity.class);
             startActivity(appel);
         } else if (id == R.id.nav_json) {
-
+            Intent appel2 = new Intent(MainActivity.this, Main3Activity.class);
+            startActivity(appel2);
         } else if (id == R.id.nav_toast) {
 
         } else if (id == R.id.nav_youtube) {
-
+            goToUrl("https://www.youtube.com/watch?v=54h2RHNtDIU");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
     }
 
     public void refresh(View v) {
@@ -187,6 +178,41 @@ public class MainActivity extends AppCompatActivity
                 .append(ss).append(" s"));
 
         Toast.makeText(getApplicationContext(),getString(R.string.msg_refresh), Toast.LENGTH_LONG).show();
+    }
+
+    public void bg_default(View v) {
+        RelativeLayout mlayout1 = (RelativeLayout) findViewById(R.id.content_main);
+        mlayout1.setBackgroundColor(Color.WHITE);
+    }
+
+    int conteur=0;
+    public void bg_change(View v) {
+        RelativeLayout mlayout2 = (RelativeLayout) findViewById(R.id.content_main);
+        if (conteur%5 == 0) {
+            mlayout2.setBackgroundColor(Color.BLUE);
+            conteur = conteur + 1;
+            return;
+        }
+        if (conteur%5 == 1) {
+            mlayout2.setBackgroundColor(Color.GRAY);
+            conteur = conteur + 1;
+            return;
+        }
+        else if (conteur%5 == 2) {
+            mlayout2.setBackgroundColor(Color.GREEN);
+            conteur = conteur + 1;
+            return;
+        }
+        else if (conteur%5 == 3) {
+            mlayout2.setBackgroundColor(Color.MAGENTA);
+            conteur = conteur + 1;
+            return;
+        }
+        else if (conteur%5 == 4) {
+            mlayout2.setBackgroundColor(Color.YELLOW);
+            conteur = conteur + 1;
+            return;
+        }
     }
 
 }

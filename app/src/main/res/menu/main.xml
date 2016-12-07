@@ -11,24 +11,4 @@
         android:orderInCategory="100"
         android:title="Fond bleu"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_settings_3"
-        android:orderInCategory="100"
-        android:title="Fond gris"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_settings_4"
-        android:orderInCategory="100"
-        android:title="Fond vert"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_settings_5"
-        android:orderInCategory="100"
-        android:title="Fond violet"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_settings_6"
-        android:orderInCategory="100"
-        android:title="Fond jaune"
-        app:showAsAction="never" />
 </menu>
