@@ -12,9 +12,9 @@
             android:icon="@drawable/ic_menu_json"
             android:title="Télécharger JSON" />
         <item
-            android:id="@+id/nav_toast"
+            android:id="@+id/nav_textview"
             android:icon="@drawable/ic_menu_toast"
-            android:title="Toast, bouttons, etc" />
+            android:title="Textview" />
         <item
             android:id="@+id/nav_youtube"
             android:icon="@drawable/ic_menu_youtube"

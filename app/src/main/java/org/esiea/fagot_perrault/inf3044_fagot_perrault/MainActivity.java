@@ -50,8 +50,9 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "N'oubliez pas de visiter notre github !", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "N'oubliez pas de visiter notre github !", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null)
+                        .show();
             }
         });
 
@@ -146,8 +147,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_json) {
             Intent appel2 = new Intent(MainActivity.this, Main3Activity.class);
             startActivity(appel2);
-        } else if (id == R.id.nav_toast) {
-
+        } else if (id == R.id.nav_textview) {
+            Intent appel3 = new Intent(MainActivity.this, Main4Activity.class);
+            startActivity(appel3);
         } else if (id == R.id.nav_youtube) {
             goToUrl("https://www.youtube.com/watch?v=54h2RHNtDIU");
         }
