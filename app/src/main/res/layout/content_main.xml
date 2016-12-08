@@ -100,7 +100,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_below="@id/textMain_1"
-        android:text="Raffraichir"
+        android:text="Raffraichir l'heure"
         android:layout_marginTop="11dp"
         android:layout_marginLeft="200dp"
         android:onClick="refresh"/>

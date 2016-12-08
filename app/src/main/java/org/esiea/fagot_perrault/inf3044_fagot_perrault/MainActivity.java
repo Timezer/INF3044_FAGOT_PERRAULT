@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -107,6 +108,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    int conteur_image = 0;
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -116,12 +118,18 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings_1) {
-            RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.content_main);
-            mlayout.setBackgroundColor(Color.WHITE);
+            ImageView image = (ImageView) findViewById(R.id.imageMain);
+            if (conteur_image%2 == 0) {
+                image.setImageResource(R.drawable.esiea_main);
+                conteur_image = conteur_image + 1;
+            }
+            else if (conteur_image%2 == 1) {
+                image.setImageResource(R.drawable.meme_study);
+                conteur_image = conteur_image + 1;
+            }
         }
         if (id == R.id.action_settings_2) {
-            RelativeLayout mlayout = (RelativeLayout) findViewById(R.id.content_main);
-            mlayout.setBackgroundColor(Color.BLUE);
+            System.exit(0);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -193,7 +201,7 @@ public class MainActivity extends AppCompatActivity
             conteur = conteur + 1;
             return;
         }
-        if (conteur%5 == 1) {
+        else if (conteur%5 == 1) {
             mlayout2.setBackgroundColor(Color.GRAY);
             conteur = conteur + 1;
             return;

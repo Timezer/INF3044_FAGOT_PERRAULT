@@ -34,7 +34,7 @@
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_1"
             android:paddingTop="20dp"
-            android:text="Celle-ci doit permettre de montrer notre capacité à coder :" />
+            android:text="Celle-ci doit permettre de montrer notre capacité à :" />
 
         <TextView
             android:id="@+id/text_a_propos_3"
@@ -44,7 +44,7 @@
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_2"
             android:paddingLeft="35dp"
-            android:text="- Capacité 1" />
+            android:text="- afficher des éléments graphiques de base (bouton, textview, image) et leut donner une utilité (changer la couleur, rafraichir la date, changer une image)" />
 
         <TextView
             android:id="@+id/text_a_propos_4"
@@ -54,7 +54,7 @@
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_3"
             android:paddingLeft="35dp"
-            android:text="- Capacité 2" />
+            android:text="- réaliser un mode portrait/landscape (voir page principale)  " />
 
         <TextView
             android:id="@+id/text_a_propos_5"
@@ -64,7 +64,7 @@
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_4"
             android:paddingLeft="35dp"
-            android:text="- Capacité 3" />
+            android:text="- créer plusieurs activités" />
 
         <TextView
             android:id="@+id/text_a_propos_6"
@@ -74,7 +74,7 @@
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_5"
             android:paddingLeft="35dp"
-            android:text="- Capacité 4" />
+            android:text="- implémenter des notifications, toasts, etc" />
 
         <TextView
             android:id="@+id/text_a_propos_7"
@@ -84,7 +84,7 @@
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_6"
             android:paddingLeft="35dp"
-            android:text="- Capacité 5" />
+            android:text="- créer une action bar et des menus" />
 
         <TextView
             android:id="@+id/text_a_propos_8"
@@ -93,8 +93,8 @@
             android:textSize="20dp"
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_7"
-            android:paddingTop="20dp"
-            android:text="FAGOT Arthur, PERRAULT William" />
+            android:paddingLeft="35dp"
+            android:text="- créer un service de téléchargement JSON" />
 
         <TextView
             android:id="@+id/text_a_propos_9"
@@ -103,6 +103,46 @@
             android:textSize="20dp"
             android:textColor="#000000"
             android:layout_below="@id/text_a_propos_8"
+            android:paddingLeft="35dp"
+            android:text="- ajouter un lien vers une autre application (Youtube dans notre cas)" />
+
+        <TextView
+            android:id="@+id/text_a_propos_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@id/text_a_propos_9"
+            android:paddingLeft="35dp"
+            android:text="- convertir automatiquement le texte dans la langue de l'appareil" />
+
+        <TextView
+            android:id="@+id/text_a_propos_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@id/text_a_propos_7"
+            android:paddingLeft="35dp"
+            android:text="- inserer un lien pour quitter l'application" />
+
+        <TextView
+            android:id="@+id/text_a_propos_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@id/text_a_propos_11"
+            android:paddingTop="20dp"
+            android:text="FAGOT Arthur, PERRAULT William" />
+
+        <TextView
+            android:id="@+id/text_a_propos_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@id/text_a_propos_12"
             android:text="Etudiants en troisième année à l'ESIEA Paris, 2016." />
 
         <ImageView
@@ -110,7 +150,7 @@
             app:srcCompat="@drawable/esiea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text_a_propos_9"
+            android:layout_below="@+id/text_a_propos_13"
             android:paddingTop="20dp"/>
 
     </RelativeLayout>
