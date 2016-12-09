@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
      */
     private GoogleApiClient client;
 
-    public static final String TAG = "Biers_Udate";
+    public static final String TAG = "Biers_Update";
     public static final String BIERS_UPDATE = "com.octip.cours.inf4042_11_BIERS_UPDATE";
 
     @Override
@@ -165,14 +165,17 @@ public class MainActivity extends AppCompatActivity
             Intent appel = new Intent(MainActivity.this, Main2Activity.class);
             startActivity(appel);
         } else if (id == R.id.nav_json) {
-            Intent intent = new Intent (this,Main3Activity.class);
-            startActivity(intent);
+            Intent appel2 = new Intent (this,Main3Activity.class);
+            startActivity(appel2);
             GetBiersServices.startActionGetBiers(this);
         } else if (id == R.id.nav_textview) {
             Intent appel3 = new Intent(MainActivity.this, Main4Activity.class);
             startActivity(appel3);
         } else if (id == R.id.nav_youtube) {
             goToUrl("https://www.youtube.com/watch?v=54h2RHNtDIU");
+        } else if (id == R.id.nav_calendrier) {
+            Intent appel4 = new Intent(MainActivity.this, Main5Activity.class);
+            startActivity(appel4);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

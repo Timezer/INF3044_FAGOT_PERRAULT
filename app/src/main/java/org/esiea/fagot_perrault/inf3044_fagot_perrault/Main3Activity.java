@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class Main3Activity extends AppCompatActivity {
-    public static final String TAG = "Biers_Udate";
+    public static final String TAG = "Biers_Update";
     public static final String BIERS_UPDATE = "com.octip.cours.inf4042_11_BIERS_UPDATE";
     public RecyclerView rv_biere;
 

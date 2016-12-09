@@ -30,11 +30,13 @@
 
         <activity android:name=".Main2Activity" />
         <activity android:name=".Main3Activity" />
-            <service
-                android:name=".GetBiersServices"
-                android:exported="false">
-            </service>
-        <activity android:name=".Main4Activity"></activity>
+
+        <service
+            android:name=".GetBiersServices"
+            android:exported="false"></service>
+
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Main5Activity"></activity>
     </application>
 
 </manifest>
