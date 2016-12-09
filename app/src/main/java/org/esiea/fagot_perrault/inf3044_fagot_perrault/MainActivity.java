@@ -1,12 +1,17 @@
 package org.esiea.fagot_perrault.inf3044_fagot_perrault;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.LocalBroadcastManager;
 import android.text.style.BackgroundColorSpan;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -30,6 +35,8 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import static org.esiea.fagot_perrault.inf3044_fagot_perrault.Main3Activity.BIERS_UPDATE;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -38,6 +45,9 @@ public class MainActivity extends AppCompatActivity
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+
+    public static final String TAG = "Biers_Udate";
+    public static final String BIERS_UPDATE = "com.octip.cours.inf4042_11_BIERS_UPDATE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +100,16 @@ public class MainActivity extends AppCompatActivity
 
         tvDisplaySecond.setText(new StringBuilder()
                 .append(ss).append(" s"));
+
+        IntentFilter intentfilter = new IntentFilter(BIERS_UPDATE);
+        LocalBroadcastManager.getInstance(this).registerReceiver(new BierUpdate(), intentfilter);
+    }
+
+    public class BierUpdate extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Log.d(TAG, intent.getAction());
+        }
     }
 
     @Override
@@ -145,8 +165,9 @@ public class MainActivity extends AppCompatActivity
             Intent appel = new Intent(MainActivity.this, Main2Activity.class);
             startActivity(appel);
         } else if (id == R.id.nav_json) {
-            Intent appel2 = new Intent(MainActivity.this, Main3Activity.class);
-            startActivity(appel2);
+            Intent intent = new Intent (this,Main3Activity.class);
+            startActivity(intent);
+            GetBiersServices.startActionGetBiers(this);
         } else if (id == R.id.nav_textview) {
             Intent appel3 = new Intent(MainActivity.this, Main4Activity.class);
             startActivity(appel3);

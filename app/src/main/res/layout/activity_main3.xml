@@ -10,9 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.esiea.fagot_perrault.inf3044_fagot_perrault.Main3Activity">
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="JSON a venir"/>
+        android:id="@+id/rv_biere"/>
     
 </RelativeLayout>
