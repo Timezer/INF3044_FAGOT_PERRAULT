@@ -10,12 +10,66 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.esiea.fagot_perrault.inf3044_fagot_perrault.Main5Activity">
 
-    <Button
+    <TextView
+        android:id="@+id/text_calendar_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Enregistrer un évenement dans votre calendrier"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_calendar_1"
         android:gravity="center"
         android:id="@+id/choose"
         android:onClick="choose"
-        android:text="Choisir une date"/>
+        android:text="Choisir une date"
+        android:layout_marginTop="5dp"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose"
+        android:gravity="center"
+        android:id="@+id/choose2"
+        android:onClick="choose2"
+        android:text="Choisir une heure"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/text_calendar_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer votre texte"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@id/choose2"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/calendar_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_calendar_2"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:minLines="6"
+        android:maxLines="6"
+        android:gravity="top|left" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_edittext"
+        android:gravity="center"
+        android:id="@+id/validate"
+        android:onClick="validate"
+        android:text="Enregistrer"
+        android:layout_marginTop="5dp"/>
 </RelativeLayout>

@@ -32,15 +32,8 @@ public class Main4Activity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String str2 = edittext2.getText().toString();
-                if (str2 != "") {
-                    textview3.setText("Votre numéro est le :");
-                    textview4.setText(str2);
-                    edittext2.setText("");
-                } else if (str2 == "") {
-                    textview3.setText(str2);
-                    textview4.setText(str2);
-                    edittext2.setText("");
-                }
+                textview4.setText(str2);
+                edittext2.setText("");
             }
         });
 

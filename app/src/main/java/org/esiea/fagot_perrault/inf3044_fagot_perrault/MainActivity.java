@@ -171,11 +171,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_textview) {
             Intent appel3 = new Intent(MainActivity.this, Main4Activity.class);
             startActivity(appel3);
-        } else if (id == R.id.nav_youtube) {
-            goToUrl("https://www.youtube.com/watch?v=54h2RHNtDIU");
         } else if (id == R.id.nav_calendrier) {
             Intent appel4 = new Intent(MainActivity.this, Main5Activity.class);
             startActivity(appel4);
+        } else if (id == R.id.nav_youtube) {
+            goToUrl("https://www.youtube.com/watch?v=54h2RHNtDIU");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

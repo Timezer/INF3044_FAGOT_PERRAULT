@@ -70,7 +70,8 @@
         android:layout_below="@+id/button2"
         android:layout_marginTop="10dp"
         android:textSize="20dp"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:text="Votre numéro est le :" />
 
     <TextView
         android:id="@+id/textView4"
