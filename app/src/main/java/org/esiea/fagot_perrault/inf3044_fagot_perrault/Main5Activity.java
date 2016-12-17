@@ -72,15 +72,30 @@ public class Main5Activity extends AppCompatActivity {
         final Button heure = (Button) findViewById(R.id.choose2);
         switch (id) {
             case DIALOG_ALERT:
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage("Voulez-vous ajouter l'évenement\n"
-                        + "\"" + et.getText() + "\"" + " à votre calendrier\n" +
-                        "pour le " + date.getText() + " à " + heure.getText() + " ?");
-                builder.setCancelable(true);
-                builder.setPositiveButton(R.string.valider, new OkOnClickListener());
-                builder.setNegativeButton(R.string.annuler, new CancelOnClickListener());
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                String langue = this.getResources().getConfiguration().locale.getDisplayLanguage();
+                String anglais = "English";
+                if (langue.equals(anglais)) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setMessage("Do you want to save the event\n"
+                            + "\"" + et.getText() + "\"" + " in your calendar\n" +
+                            "on the " + date.getText() + " at " + heure.getText() + " ?");
+                    builder.setCancelable(true);
+                    builder.setPositiveButton(R.string.valider, new OkOnClickListener());
+                    builder.setNegativeButton(R.string.annuler, new CancelOnClickListener());
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                }
+                else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setMessage("Voulez-vous ajouter l'évenement\n"
+                            + "\"" + et.getText() + "\"" + " à votre calendrier\n" +
+                            "pour le " + date.getText() + " à " + heure.getText() + " ?");
+                    builder.setCancelable(true);
+                    builder.setPositiveButton(R.string.valider, new OkOnClickListener());
+                    builder.setNegativeButton(R.string.annuler, new CancelOnClickListener());
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                }
         }
         return super.onCreateDialog(id);
     }
