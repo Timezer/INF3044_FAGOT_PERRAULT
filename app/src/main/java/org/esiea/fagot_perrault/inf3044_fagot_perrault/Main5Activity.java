@@ -23,7 +23,6 @@ public class Main5Activity extends AppCompatActivity {
     public TimePickerDialog tpd = null;
     public String testdate = "null";
     public String testheure = "null";
-    public String msg = "Sans message";
     public static final int DIALOG_ALERT = 10;
 
     @Override
@@ -78,8 +77,8 @@ public class Main5Activity extends AppCompatActivity {
                         + "\"" + et.getText() + "\"" + " à votre calendrier\n" +
                         "pour le " + date.getText() + " à " + heure.getText() + " ?");
                 builder.setCancelable(true);
-                builder.setPositiveButton("Valider", new OkOnClickListener());
-                builder.setNegativeButton("Annuler", new CancelOnClickListener());
+                builder.setPositiveButton(R.string.valider, new OkOnClickListener());
+                builder.setNegativeButton(R.string.annuler, new CancelOnClickListener());
                 AlertDialog dialog = builder.create();
                 dialog.show();
         }
@@ -89,7 +88,7 @@ public class Main5Activity extends AppCompatActivity {
     private final class CancelOnClickListener implements
             DialogInterface.OnClickListener {
         public void onClick(DialogInterface dialog, int which) {
-            Toast.makeText(getApplicationContext(), "Enregistrement annulé", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.enregistrement, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -105,10 +104,10 @@ public class Main5Activity extends AppCompatActivity {
             showDialog(DIALOG_ALERT);
         }
         else if (testdate == "null") {
-            Toast.makeText(getApplicationContext(), "Veuillez choisir une date", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.choix_date, Toast.LENGTH_SHORT).show();
         }
         else if (testheure == "null") {
-            Toast.makeText(getApplicationContext(), "Veuillez choisir une heure", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.choix_heure, Toast.LENGTH_SHORT).show();
         }
 
     }

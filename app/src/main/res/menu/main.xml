@@ -4,11 +4,11 @@
     <item
         android:id="@+id/action_settings_1"
         android:orderInCategory="100"
-        android:title="Changer l'image"
+        android:title="@string/main_1"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_settings_2"
         android:orderInCategory="100"
-        android:title="Quitter"
+        android:title="@string/main_2"
         app:showAsAction="never" />
 </menu>

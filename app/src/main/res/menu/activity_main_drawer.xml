@@ -6,23 +6,23 @@
         <item
             android:id="@+id/nav_a_propos"
             android:icon="@drawable/ic_menu_a_propos"
-            android:title="A propos" />
+            android:title="@string/menu_1" />
         <item
             android:id="@+id/nav_json"
             android:icon="@drawable/ic_menu_json"
-            android:title="Télécharger JSON" />
+            android:title="@string/menu_2" />
         <item
             android:id="@+id/nav_textview"
             android:icon="@drawable/ic_menu_toast"
-            android:title="Textview" />
+            android:title="@string/menu_3" />
         <item
             android:id="@+id/nav_calendrier"
             android:icon="@drawable/ic_menu_calendrier"
-            android:title="Calendrier" />
+            android:title="@string/menu_4" />
         <item
             android:id="@+id/nav_youtube"
             android:icon="@drawable/ic_menu_youtube"
-            android:title="Youtube (ESIEA)" />
+            android:title="@string/menu_5" />
     </group>
 
 </menu>

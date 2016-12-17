@@ -27,7 +27,6 @@ public class Main4Activity extends AppCompatActivity {
 
         final EditText edittext2 = (EditText) findViewById(R.id.edittext2);
         Button btn2 = (Button) findViewById(R.id.button2);
-        final TextView textview3 = (TextView) findViewById(R.id.textView3);
         final TextView textview4 = (TextView) findViewById(R.id.textView4);
         btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

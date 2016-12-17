@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "N'oubliez pas de visiter notre github !", Snackbar.LENGTH_SHORT)
+                Snackbar.make(view, R.string.git, Snackbar.LENGTH_SHORT)
                         .setAction("Action", null)
                         .show();
             }

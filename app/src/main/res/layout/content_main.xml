@@ -17,7 +17,7 @@
         android:id="@+id/textMain_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenue sur l'application de FAGOT Arthur et PERRAULT William !"
+        android:text="@string/content_1"
         android:textSize="20dp"
         android:textColor="#000000" />
 
@@ -25,7 +25,7 @@
         android:id="@+id/textMain_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="On est le"
+        android:text="@string/content_2"
         android:textSize="20dp"
         android:layout_below="@id/textMain_1"
         android:paddingTop="10dp"
@@ -47,7 +47,7 @@
         android:id="@+id/textMain_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Il est"
+        android:text="@string/content_3"
         android:textSize="20dp"
         android:layout_below="@id/textMain_2"
         android:paddingTop="10dp"
@@ -69,7 +69,7 @@
         android:id="@+id/textMain_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Passé de"
+        android:text="@string/content_4"
         android:textSize="20dp"
         android:layout_below="@id/textMain_3"
         android:paddingTop="10dp"
@@ -100,7 +100,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_below="@id/textMain_1"
-        android:text="Raffraichir l'heure"
+        android:text="@string/content_5"
         android:layout_marginTop="11dp"
         android:layout_marginLeft="200dp"
         android:onClick="refresh"/>
@@ -110,7 +110,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@id/imageMain"
-        android:text="Fond blanc"
+        android:text="@string/content_6"
         android:layout_marginTop="11dp"
         android:onClick="bg_default"/>
 
@@ -119,7 +119,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@id/imageMain"
-        android:text="Fond couleur"
+        android:text="@string/content_7"
         android:layout_marginTop="11dp"
         android:layout_marginLeft="200dp"
         android:onClick="bg_change"/>

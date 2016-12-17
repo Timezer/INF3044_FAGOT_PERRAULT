@@ -1,10 +1,75 @@
 <resources>
     <string name="app_name">INF3044_FAGOT_PERRAULT</string>
 
+    //MainActivity.java
+    <string name="git">N\'oubliez pas de visiter notre github !</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_settings">Settings</string>
     <string name="msg_refresh">L\'heure à été mise à jour !</string>
+
+    //main5Activity.java
+    <string name="valider">Valider</string>
+    <string name="annuler">Annuler</string>
+    <string name="enregistrement">Enregistrement annulé</string>
+    <string name="choix_date">Veuillez choisir une date</string>
+    <string name="choix_heure">Veuillez choisir une heure</string>
+
+    //GetBiersServices.java
+    <string name="notif_1">Votre sélection de bières a été téléchargée</string>
+    <string name="notif_2">Veuillez vous connecter à internet pour télécharger le fichier JSON</string>
+
+    //activity_main2.xml
+    <string name="a_propos_1">Cette application a été développée dans le cadre d\'un projet mobile à l\'ESIEA.</string>
+    <string name="a_propos_2">Celle-ci doit permettre de montrer notre capacité à :</string>
+    <string name="a_propos_3">- afficher des éléments graphiques de base (bouton, textview, image, edittext, etc) et leur donner une utilité (changer la couleur, rafraîchir la date, changer une image), etc</string>
+    <string name="a_propos_4">- réaliser un mode portrait/landscape (voir page principale, page calendrier et page edittext)</string>
+    <string name="a_propos_5">- créer plusieurs activités</string>
+    <string name="a_propos_6">- implémenter des notifications, toasts, boites de dialogues</string>
+    <string name="a_propos_7">- créer une action bar et des menus</string>
+    <string name="a_propos_8">- créer un service de téléchargement JSON</string>
+    <string name="a_propos_9">- ajouter un lien vers une autre application (Youtube dans notre cas)</string>
+    <string name="a_propos_10">- convertir automatiquement le texte dans la langue de l\'appareil</string>
+    <string name="a_propos_11">- insérer une action pour quitter l\'application</string>
+    <string name="a_propos_12">FAGOT Arthur, PERRAULT William</string>
+    <string name="a_propos_13">Etudiants en troisième année à l\'ESIEA Paris, 2016.</string>
+
+    //activity_main4.xml et land-activity_main4.xml
+    <string name="main4_1">Premier edittext\nEntrez un texte :</string>
+    <string name="main4_2">Changer le texte</string>
+    <string name="main4_3">Montrer le texte</string>
+    <string name="main4_4">Deuxième edittext\nEntrez votre numéro de téléphone :</string>
+    <string name="main4_5">Afficher le numéro</string>
+    <string name="main4_6">Votre numéro est le :</string>
+
+    //activity_main5.xml et land-activity_main5.xml
+    <string name="main5_1">Enregistrer un évenement dans votre calendrier</string>
+    <string name="main5_2">Choisir une date</string>
+    <string name="main5_3">Choisir une heure</string>
+    <string name="main5_4">Votre événement :</string>
+    <string name="main5_5">Enregistrer</string>
+
+    //content_main.xml et land-content_main.xml
+    <string name="content_1">Bienvenue sur l\'application de FAGOT Arthur et PERRAULT William !</string>
+    <string name="content_2">On est le</string>
+    <string name="content_3">Il est</string>
+    <string name="content_4">Passé de</string>
+    <string name="content_5">Raffraichir l\'heure</string>
+    <string name="content_6">Fond blanc</string>
+    <string name="content_7">Fond couleur</string>
+
+    //nav_header_main.xml
+    <string name="nav_1">FAGOT Arthur, PERRAULT William</string>
+    <string name="nav_2">Application projet mobile</string>
+
+    //activity_main_drawer.xml
+    <string name="menu_1">A propos</string>
+    <string name="menu_2">Télécharger JSON</string>
+    <string name="menu_3">Textview</string>
+    <string name="menu_4">Calendrier</string>
+    <string name="menu_5">Youtube (ESIEA)</string>
+
+    //main.xml
+    <string name="main_1">Changer l\'image</string>
+    <string name="main_2">Quitter</string>
 
 </resources>
