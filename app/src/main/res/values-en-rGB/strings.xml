@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">INF3044_FAGOT_PERRAULT</string>
+
+    //MainActivity.java
+    <string name="git">Don\'t forget to visit our github !</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="msg_refresh">The hour has been updated !</string>
+
+    //main5Activity.java
+    <string name="valider">Validate</string>
+    <string name="annuler">Cancel</string>
+    <string name="enregistrement">Saving canceled</string>
+    <string name="choix_date">Please choose a date</string>
+    <string name="choix_heure">Please choose an hour</string>
+
+    //GetBiersServices.java
+    <string name="notif_1">Your bier selection as been correctly downloaded</string>
+    <string name="notif_2">Please verify your connection</string>
+
+    //activity_main2.xml
+    <string name="a_propos_1">This application has been developed in the context of a mobile phone project at our school the ESIEA.</string>
+    <string name="a_propos_2">Its purpose is to show our capabilities to :</string>
+    <string name="a_propos_3">- display some basic grafic elements (buttons, textview, pictures,edittext) and give them a use (changing the color, refreshing the date, changing a picture)</string>
+    <string name="a_propos_4">- realise a portrait mode/landscape mode (as can be seen on the main page and the edittext page)</string>
+    <string name="a_propos_5">- create many activities</string>
+    <string name="a_propos_6">- implement services like notifications, toats ...</string>
+    <string name="a_propos_7">- create an action bar and menus</string>
+    <string name="a_propos_8">- create a JSON downloading service</string>
+    <string name="a_propos_9">- add a link to another application (YouTube in our case)</string>
+    <string name="a_propos_10">- convert automatically the text in the language of the device (effective for fr-rFR and en-rGB)</string>
+    <string name="a_propos_11">- insert an action to quit</string>
+    <string name="a_propos_12">FAGOT Arthur, PERRAULT William</string>
+    <string name="a_propos_13">Students in the first cycle of engineering at the ESIEA, Paris, 2016</string>
+
+    //activity_main4.xml et land-activity_main4.xml
+    <string name="main4_1">First edittext\nPlease write down a text :</string>
+    <string name="main4_2">Change the texte</string>
+    <string name="main4_3">Display the text</string>
+    <string name="main4_4">Second edittext\nPlease write down a phone number :</string>
+    <string name="main4_5">Display the phone number</string>
+    <string name="main4_6">Your phone number is:</string>
+
+    //activity_main5.xml et land-activity_main5.xml
+    <string name="main5_1">Save an event in you agenda</string>
+    <string name="main5_2">Choose a date</string>
+    <string name="main5_3">Choose a hour</string>
+    <string name="main5_4">Your event :</string>
+    <string name="main5_5">Save</string>
+
+    //content_main.xml et land-content_main.xml
+    <string name="content_1">Welcome on the application of FAGOT Arthur and PERRAULT William !</string>
+    <string name="content_2">It is the</string>
+    <string name="content_3">At</string>
+    <string name="content_4">Passed by</string>
+    <string name="content_5">Refresh the hour</string>
+    <string name="content_6">White background</string>
+    <string name="content_7">Colored background</string>
+
+    //nav_header_main.xml
+    <string name="nav_1">FAGOT Arthur, PERRAULT William</string>
+    <string name="nav_2">Mobile project application</string>
+
+    //activity_main_drawer.xml
+    <string name="menu_1">About</string>
+    <string name="menu_2">Download JSON</string>
+    <string name="menu_3">Textview</string>
+    <string name="menu_4">Calendar</string>
+    <string name="menu_5">YouTube suggestion</string>
+
+    //main.xml
+    <string name="main_1">Change the picture</string>
+    <string name="main_2">Quit</string>
+
+</resources>
