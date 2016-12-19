@@ -50,7 +50,7 @@ public class GetBiersServices extends IntentService {
                 LocalBroadcastManager.getInstance(this).sendBroadcast(new Intent(MainActivity.BIERS_UPDATE));
                 NotificationCompat.Builder builder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentText("@string/notif_1")
+                        .setContentText("Votre sélection de bières a été téléchargée")
                         .setContentTitle("INF3044_FAGOT_PERRAULT");
                 NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
                 nm.notify(0,builder.build());
@@ -59,7 +59,7 @@ public class GetBiersServices extends IntentService {
                 Log.w(TAG,"erreur"+conn.getResponseCode());
                 NotificationCompat.Builder builder2 = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentText("@string/notif_2")
+                        .setContentText("Veuillez vous connecter à internet pour télécharger le fichier JSON")
                         .setContentTitle("INF3044_FAGOT_PERRAULT");
                 NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
                 nm.notify(0,builder2.build());
